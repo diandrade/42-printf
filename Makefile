@@ -7,9 +7,10 @@ RM = rm -rf
 NAME = libftprintf.a
 
 SRCS = srcs/core/ft_printf.c \
-       srcs/utils/ft_print_char.c \
-       srcs/utils/ft_print_string.c \
-       srcs/utils/ft_strlen.c
+       srcs/utils/ft_putchar.c \
+	   srcs/utils/ft_putstr.c \
+	   srcs/utils/ft_putnbr.c \
+	   srcs/utils/ft_putnbr_unsigned.c
 	   
 OBJS = $(SRCS:.c=.o)
 

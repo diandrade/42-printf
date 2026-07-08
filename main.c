@@ -1,8 +1,6 @@
-#include "includes/ft_printf.h"
+#include "ft_printf.h"
 
 int main(void)
 {
-    ft_printf("%c", 'S');
-    ft_printf("%c", '\n');
-    ft_printf("%s", "String\n");
+    ft_printf("%x", "123456789abcdef");
 }
