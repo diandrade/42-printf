@@ -10,7 +10,9 @@ SRCS = srcs/core/ft_printf.c \
        srcs/utils/ft_putchar.c \
 	   srcs/utils/ft_putstr.c \
 	   srcs/utils/ft_putnbr.c \
-	   srcs/utils/ft_putnbr_unsigned.c
+	   srcs/utils/ft_putnbr_unsigned.c \
+	   srcs/utils/ft_puthex.c \
+	   srcs/utils/ft_putptr.c
 	   
 OBJS = $(SRCS:.c=.o)
 

@@ -1,24 +1,22 @@
 #include "../../includes/ft_printf.h"
 
-static int ft_putnbr(int n)
+int ft_putnbr(int n)
 {
-	int	totalsum;
+    int       totalsum;
+    long long n_long;
 
-	totalsum = 0;
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		totalsum += 1;
-		n = -n;
-	}
-	
-	if (n >= 10)
-	{
-		totalsum += ft_putnbr(n / 10);
-	}
-	
-	n = (n % 10) + '0';
-	write(1, &n, 1);
-	totalsum += 1;
-	return (totalsum);
+    totalsum = 0;
+    n_long = n;
+    if (n_long < 0)
+    {
+        write(1, "-", 1);
+        totalsum += 1;
+        n_long = -n_long;
+    }
+    if (n_long >= 10)
+    {
+        totalsum += ft_putnbr(n_long / 10);
+    }
+    totalsum += ft_putchar((n_long % 10) + '0');
+    return (totalsum);
 }

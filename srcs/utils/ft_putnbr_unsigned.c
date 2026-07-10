@@ -1,6 +1,6 @@
 #include "../../includes/ft_printf.h"
 
-static int ft_putnbr_unsigned(unsigned int n)
+int ft_putnbr_unsigned(unsigned int n)
 {
 	int	totalsum;
 
